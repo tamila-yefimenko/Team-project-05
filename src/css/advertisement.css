@@ -1,16 +1,12 @@
 .advertisement {
     display: flex;
     background-color: #000;
-    /* Вкажіть бажаний колір фону */
     background-image: url('path-to-image.jpg');
-    /* Вкажіть шлях до зображення */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     padding: 60px 28px;
     border-radius: 30px;
-    max-width: 375px;
-    /* Використовуємо це значення для мобільної версії */
     margin: 0 auto;
     width: 100%;
 }
@@ -38,7 +34,7 @@
 }
 
 .advertisement .content .btn {
-    display: inline-block;
+    display: block;
     background: none;
     border: 1px solid rgba(251, 251, 251, 0.15);
     padding: 15px 43px;
