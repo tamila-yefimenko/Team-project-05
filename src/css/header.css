@@ -1,15 +1,11 @@
 .page-header{
-    padding: 20px 0px 0px 0px;
-        width: 375px;
-        height: 74px;
+    
+    border-bottom: 1px solid rgba(12, 12, 12, 0.1);
 }
-
 .headache{
     display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 335px;
-            height: 34px;
 }
 .navigations, .social-container{
     display: none;
@@ -26,52 +22,27 @@
         font-size: 20px;
         letter-spacing: -0.02em;
         color: #0c0c0c;
-        width: 90px;
-            height: 19px;
+        padding: 28px 0;
 }
-
  @media (min-width: 768px) {
-    .page-header{
-            width: 768px;
-            height: 92px;
-            padding: 26px 32px;
-    }
-    .headache{
-        width: 704px;
-            height: 40px;
-            
-    }
- }
- .logo{
-    width: 112px;
-        height: 24px;
- }
-@media screen and (min-width: 1280px){
-    .page-header{
-            width: 1280px;
-            height: 88px;
-            padding: 32px 64.5px;
-    }
-    .headache{
-    width: 1151px;
-        height: 36px;
-        
-    }
     .logo{
-        margin-right: 203px;
-        /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+            padding: 34px 0;
     }
-    /* .logo:hover,
-    .logo:focus{
-        color:#3350e9;
-    } */
+ }
+
+@media screen and (min-width: 1280px){
+
+    .logo{
+padding: 32px 0;
+        margin-right: 203px;
+    }
+
     .navigations {
      display: flex;
     visibility: visible;
         opacity: 1;
-width: 505px;
-    height: 28px;
      gap: 40px;
+     padding: 30px 0;
  } 
   .point{
 font-family: "Gilroy", sans-serif;
@@ -81,12 +52,7 @@ font-family: "Gilroy", sans-serif;
     text-align: center;
     color: #0c0c0c;
         position: relative;
-        /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 } 
-/* .point:hover, 
-.point:focus{
-    color:#3350e9;
-} */
 .strip::after {
     content: '';
 display: block;
@@ -101,27 +67,23 @@ position: absolute;
 .social-container{
     display: flex;
         gap: 10px;
-        width: 128px;
-            height: 36px;
+            padding: 26px 0;
         justify-content: center;
-        margin-left: 203px;
         visibility: visible;
             opacity: 1;
 } 
 .social-icon{
-    border: 1px solid rgba(12, 12, 12, 0.1);
-        border-radius: 10px;
-        padding: 8px;
-        width: 36px;
-        height: 36px;
-        background: #FFFFFF;
+border: 1px solid rgba(12, 12, 12, 0.1);
+    border-radius: 10px;
+    padding: 8px;
+    width: 36px;
+    height: 36px;
         display: flex;
+        justify-content: flex-end;
         position: relative;
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icon-link{
-    width: 20px;
-        height: 20px;
         opacity: 0.8;
 }
 .social-icon-svg{
