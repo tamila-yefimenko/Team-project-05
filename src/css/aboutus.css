@@ -45,6 +45,7 @@
 
 .about-img {
     width: 100%;
+    border-radius: 30px;
 }
 
 @media screen and (min-width:768px){
@@ -57,6 +58,7 @@
     .about-item{
         padding: 80px 60px;
         margin-bottom: 40px;
+        border-radius: 50px;
     }
 
     .about-title{
@@ -70,6 +72,10 @@
 
     .about-btn{
         margin-top: 60px;
+    }
+
+    .about-img{
+        border-radius: 50px;
     }
 }
 
