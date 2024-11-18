@@ -1,0 +1,188 @@
+.menu {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 20px 0;
+    }
+
+.mobile-menu {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden; 
+    pointer-events: none;
+    background-color: rgba(12, 12, 12, 0.92);
+    background-image: url("/images/MenuFonts/image-menu.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 20px 40px 20px;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+@media screen and (min-resolution: 192pi) {
+    .mobile-menu {
+        background-image: url("/images/MenuFonts/image-menu-2x.webp");
+    }
+}
+    .menu-icon{
+        stroke-width: 2.50px;
+        stroke: #0c0c0c;
+    }
+    .menu-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+
+    .mobile-menu-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        cursor: pointer;
+        display: block;
+        margin-left: auto;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    }
+
+    .mobile-menu.is-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .close-img {
+        stroke-width: 2.50px;
+        stroke: #fbfbfb;
+    }
+
+    .menu-navigations{
+        position: relative; 
+        margin: 0 auto;
+    }
+
+    .point-nav {
+        font-family: "Gilroy", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.29;
+        text-align: center;
+        color: #fbfbfb;
+        position: relative;
+    }
+
+    .menu-item {
+        text-align: center;
+    }
+
+    .menu-item:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    .menu-item:first-child {
+        margin-bottom: 34px;
+    }
+
+    .strip::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 9px;
+        height: 8px;
+        background-color: #3350e9;
+        border-radius: 100%;
+        margin-top: 2px;
+        left: 15px;
+    }
+
+    .social-menu{
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        padding-left: 19px;
+        padding-right: 19px;     
+    }
+
+    .mobile-icon{
+        border: 1px solid rgba(251, 251, 251, 0.1);
+        border-radius: 10px;
+        padding: 10px;
+        width: 34px;
+        height: 34px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .low-icon{
+        width: 18px;
+        height: 18px;
+        opacity: 0.8;
+    }
+
+    .social-icon-svg-low {
+        fill: #fbfbfb;
+    }
+
+    .mobile-icon:hover,
+    .mobile-icon:focus {
+        fill: #ffff;
+    }
+
+
+@media screen and (min-width: 768px) {
+    @media screen and (min-resolution: 192pi) {
+        .mobile-menu {
+            background-image: url("/images/MenuFonts/image-tab-2x.webp");
+        }
+    }
+
+    .mobile-menu {
+        width: 330px;
+    }
+
+    .mobile-menu-close{
+        top: 26px;
+        right: 32px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .mobile-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .low-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .social-menu{
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .menu,
+    .menu-icon {
+        display: none;
+    }
+
+    .mobile-menu, .mobile-menu-close{
+        display: none;
+    }
+}
