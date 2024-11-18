@@ -9,7 +9,7 @@
         height: 100%;
         position: fixed;
         top: 0;
-        right: 0;
+        right: 20px;
         display: flex;
         flex-direction: column;
         overflow: auto;
@@ -118,13 +118,14 @@ display: flex;
         height: 18px;
         opacity: 0.8;
 }
+.social-icon-svg-low {
+    fill: #fbfbfb;
+}
 .mobile-icon:hover,
 .mobile-icon:focus {
     fill: #ffff;
 }
-.social-icon-svg-low{
-    fill:  #fbfbfb;
-}
+
 
 @media screen and (min-width: 768px) {
     @media screen and (min-resolution: 192pi) {
@@ -133,6 +134,7 @@ display: flex;
     }
     }
 .mobile-menu {
+    right: 32px;
     width: 330px;
 }
 .mobile-menu-close{
