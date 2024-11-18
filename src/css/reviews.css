@@ -1,0 +1,88 @@
+.reviews{
+    padding: 40px 20px;
+}
+
+.reviews-title {
+    font-family: "Gilroy",sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: #0c0c0c;
+    
+}
+.reviews-list {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 1fr;
+    /* За замовчуванням - 1 відгук */
+    padding: 0px;
+    margin-top: 40px;
+}
+
+.review-item {
+    background-color: #f3f3f3;
+    border-radius: 30px;
+    padding: 32px 36px;
+}
+
+.review-img {
+    border-radius: 100%;
+    background-color: #fbfbfb;
+margin: 0 auto;
+}
+
+.review-figcaption {
+    font-size: 14px;
+    color: #555;
+    margin-top: 24px;
+
+}
+.victoria{
+    display: none;
+}
+.anastasia{
+    display: none;
+}
+@media (min-width: 768px) {
+    .reviews-list {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 відгуки на планшеті */
+    }
+        .victoria {
+            display:grid ;
+        }
+.reviews {
+    padding: 40px 32px;
+}
+}
+
+@media (min-width: 1158px) {
+    .reviews-list {
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 відгуки на десктопі */
+    }
+        .anastasia {
+            display: grid;
+        }
+        .reviews {
+            padding: 40px 65px;
+        }
+}
+.reviews-subtitle{
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 125%;
+        letter-spacing: -0.02em;
+        text-align: center;
+        color: #0c0c0c;
+        margin-bottom: 8px;
+}
+.reviews-subtext{
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 125%;
+        letter-spacing: -0.02em;
+        text-align: center;
+        color: rgba(12, 12, 12, 0.4);
+}
