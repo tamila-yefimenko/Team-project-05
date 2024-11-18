@@ -10,6 +10,7 @@ footer {
 .container-footer {
   padding: 40px 28px 28px;
   min-width: unset;
+  max-width: 335px;
 }
 
 .footer-text {
