@@ -1,3 +1,7 @@
+.sale-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
 
 .sale-container {
     display: block;
@@ -189,7 +193,7 @@
 
   @media only screen and (min-width: 1280px) {
          .sale-section {
-            padding: 0 65px;
+            padding: 40px 65px;
         }
 
         .sale-wrapper {
