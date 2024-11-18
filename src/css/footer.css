@@ -21,17 +21,24 @@ footer {
   margin-bottom: 20px;
 }
 
-/* .footer-soc-links:hover .footer-icon {
-    fill: rgb(255, 255, 255, 0.9);
-  }
-  
-  .footer-icon {
-    transition: fill 0.3s ease;
-  } */
-
 .footer-soc {
   width: 34px;
   height: 34px;
+  border: 1px solid rgba(251, 251, 251, 0.1);
+  border-radius: 10px;
+}
+
+.footer-soc-links:hover {
+  opacity: 1;
+}
+
+.footer-icon {
+  fill: #fbfbfb;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-soc-links:hover .footer-icon {
+  fill: #fbfbfb;
 }
 
 .footer-soc-links {
@@ -41,10 +48,10 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(251, 251, 251, 0.1);
-  border-radius: 10px;
   padding: 8px;
   opacity: 0.8;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links {
