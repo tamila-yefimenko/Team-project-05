@@ -151,7 +151,7 @@ footer {
   }
   .container-footer {
     padding: 40px 40px 28px;
-    max-width: 768px;
+    max-width: unset;
   }
   .footer-top-content {
     display: flex;
