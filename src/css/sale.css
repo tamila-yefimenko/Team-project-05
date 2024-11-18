@@ -202,7 +202,6 @@
         }
 
         .product-images {
-            padding-right: 40px;
             padding-bottom: 0px;
         }
 
@@ -211,6 +210,7 @@
             padding-left: 70px;
             padding-bottom: 0;
             width: 428px;
+            margin: 0;
         }
 
         .product-info {
