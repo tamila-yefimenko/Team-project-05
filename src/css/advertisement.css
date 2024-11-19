@@ -133,6 +133,7 @@
     .button:active,
     .button:focus {
         background-color: #fbfbfb;
+        color: #0c0c0c;
     }
 
     @media screen and (min-resolution: 2dppx),
