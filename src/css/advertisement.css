@@ -1,153 +1,146 @@
 
 .advertisement {
-    background-image: url(/images/Advertisement/image-advertisement-mob.png), linear-gradient(#0c0c0c, #0c0c0c);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 30px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    
+    padding-top: 30px;
+    padding-bottom: 30px;
     }
+
+    .content {
+        padding: 60px 28px;
+        text-align: left;
+        background-image: url(/images/Advertisement/image-advertisement-mob.png), linear-gradient(#0c0c0c, #0c0c0c);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 30px;
+    }
+
 @media screen and (min-resolution: 2dppx),
 (min-resolution: 192dpi),
 (-webkit-min-device-pixel-ratio: 2) {
-.advertisement {
-    background-image: url(/images/Advertisement/image-advertisement-mob-2x.png), linear-gradient(#0c0c0c, #0c0c0c);
+    .content {
+        background-image: url(/images/Advertisement/image-advertisement-mob-2x.png), linear-gradient(#0c0c0c, #0c0c0c);
     }
 }
 
-.content {
-padding-top: 60px;
-padding-left: 28px;
-padding-right: 28px;
-padding-bottom: 80px;
-text-align: left;
+    .text-advertisement {
+        font-family: "Gilroy", sans-serif;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 1;
+        letter-spacing: -0.02em;
+        color: #fbfbfb;
+        margin-bottom: 28px;
+        text-align: left;
+        padding-bottom: 7px;
+    }
 
-}
+    .advertisement .content .story {
+        color: rgba(251, 251, 251, 0.5);
+        /* Прозорий фон для тексту */
+    }
 
-.text-advertisement {
-    font-family: "Gilroy", sans-serif;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 1;
-    letter-spacing: -0.02em;
-    color: #fbfbfb;
-    margin-bottom: 28px;
-    text-align: left;
-}
+    .advertisement .content .button {
+        display: block;
+        background: none;
+        border: 1px solid rgba(251, 251, 251, 0.15);
+        padding: 15px 43px;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 16px;
+        width: 160px;
+        height: 48px;
+        font-family: "Gilroy", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.29;
+        text-align: center;
+        color: #fbfbfb;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.advertisement .content .story {
-    color: rgba(251, 251, 251, 0.5);
-    /* Прозорий фон для тексту */
-}
+    }
 
-.advertisement .content .button {
-    display: block;
-    background: none;
-    border: 1px solid rgba(251, 251, 251, 0.15);
-    padding: 15px 43px;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 16px;
-    width: 160px;
-    height: 48px;
-    font-family: "Gilroy", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.29;
-    text-align: center;
-    color: #fbfbfb;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-}
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+    }
 
 
 @media (min-width: 768px) {
     .advertisement {
-        max-width: 768px;
-        max-height: 425px;
-        background-image: url(/images/Advertisement/image-advertisement-tab.png),
-        linear-gradient(#0c0c0c, #0c0c0c);
-        margin-top: 40px;
-        margin-bottom: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
         }
+
     .content {
-        padding-top: 80px;
-        padding-left: 64px;
-        padding-right: 64px;
-        padding-bottom: 32px;
+        padding: 80px 64px;
         text-align: center;
+        background-image: url(/images/Advertisement/image-advertisement-tab.png),
+            linear-gradient(#0c0c0c, #0c0c0c);
     }
+
     .text-advertisement {
         font-size: 48px;
         line-height: 0.92;
         margin-bottom: 32px;
     }
+
         @media screen and (min-resolution: 2dppx),
         (min-resolution: 192dpi),
         (-webkit-min-device-pixel-ratio: 2) {
-        .advertisement {
+        .content {
                 background-image: url(/images/Advertisement/image-advertisement-tab-2x.png), linear-gradient(#0c0c0c, #0c0c0c);
             }
         }
 }
 
 @media (min-width: 1280px) {
+
+    .advertisement .container {
+        padding: 0 65px;
+    }
+
     .advertisement {
-        max-width: 1280px;
-        max-height: 298px;
         width: 100%;
-        margin: 0 auto;
-        background-image: url(/images/Advertisement/image-advertisement-desc.png),
-        linear-gradient(#0c0c0c, #0c0c0c);
-        margin-top: 50px;
-        margin-bottom: 50px;
-        }
-        
-    
-            
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+     
     .content {
-        padding-top: 83px;
-        padding-left: 48px;
+        padding: 83px 80px;
         display: flex;
         justify-content: space-between;
         gap: 140px;
+        background-image: url(/images/Advertisement/image-advertisement-desc.png),
+                linear-gradient(#0c0c0c, #0c0c0c);
          }
             
     .text-advertisement {
         max-width: 690px;
         font-size: 48px;
         line-height: 0.92;
-        
-            }
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
     
     .button:hover,
     .button:active,
     .button:focus {
-    background-color: #fbfbfb;
-        }
-     @media screen and (min-resolution: 2dppx),
+        background-color: #fbfbfb;
+    }
+
+    @media screen and (min-resolution: 2dppx),
     (min-resolution: 192dpi),
     (-webkit-min-device-pixel-ratio: 2) {
-    .title-page {
-    background-image: url(/images/Advertisement/image-advertisement-desc-2x.png), linear-gradient(#0c0c0c, #0c0c0c);
-     }
+        .content {
+            background-image: url(/images/Advertisement/image-advertisement-desc-2x.png), linear-gradient(#0c0c0c, #0c0c0c);
+        }
     }
 }
 
