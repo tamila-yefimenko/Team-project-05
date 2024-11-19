@@ -93,6 +93,7 @@
         justify-content: flex-end;
         position: relative;
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
     }
 
     .social-icon-link{
@@ -106,8 +107,8 @@
         transform: translate(-50%, -50%);
     }
 
-    .social-icon:hover,
-    .social-icon:focus{
+    .social-icon:hover .social-icon-svg,
+    .social-icon:focus .social-icon-svg{
         fill: #3350e9;
     }
 }
