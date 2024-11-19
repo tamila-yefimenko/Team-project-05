@@ -1,43 +1,40 @@
 .reviews{
-    padding: 40px 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .reviews-title {
-    font-family: "Gilroy",sans-serif;
+text-align: left;
     font-weight: 600;
     font-size: 32px;
-    line-height: 100%;
+    line-height: 1;
     letter-spacing: -0.02em;
     color: #0c0c0c;
-    
+    margin-bottom: 24px;
 }
 .reviews-list {
-    display: grid;
-    gap: 24px;
-    grid-template-columns: 1fr;
-    /* За замовчуванням - 1 відгук */
-    padding: 0px;
-    margin-top: 40px;
+display: flex;
+    gap: 20px;
 }
 
 .review-item {
     background-color: #f3f3f3;
     border-radius: 30px;
     padding: 32px 36px;
+    width: 335px;
+
 }
+    .review-figcaption{
+text-align: center;
+    }
 
 .review-img {
     border-radius: 100%;
     background-color: #fbfbfb;
 margin: 0 auto;
+margin-bottom: 24px;
 }
 
-.review-figcaption {
-    font-size: 14px;
-    color: #555;
-    margin-top: 24px;
-
-}
 .victoria{
     display: none;
 }
@@ -45,38 +42,46 @@ margin: 0 auto;
     display: none;
 }
 @media (min-width: 768px) {
-    .reviews-list {
-        grid-template-columns: repeat(2, 1fr);
-        /* 2 відгуки на планшеті */
+    .review-item {
+            width: 344px;
+        }
+    .reviews-title{
+        font-weight: 600;
+            font-size: 48px;
+            line-height: 92%;
+            letter-spacing: -0.02em;
     }
+    
         .victoria {
-            display:grid ;
+            display:block;
         }
 .reviews {
-    padding: 40px 32px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 }
 
-@media (min-width: 1158px) {
-    .reviews-list {
-        grid-template-columns: repeat(3, 1fr);
-        /* 3 відгуки на десктопі */
-    }
+@media (min-width: 1280px) {
+.review-item {
+    width: 370px;
+}
         .anastasia {
-            display: grid;
+            display: block;
         }
-        .reviews {
-            padding: 40px 65px;
+    .reviews {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding: 0 65px;
         }
 }
 .reviews-subtitle{
     font-weight: 500;
-        font-size: 16px;
-        line-height: 125%;
-        letter-spacing: -0.02em;
-        text-align: center;
-        color: #0c0c0c;
-        margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin-bottom: 8px;
+    color: #0c0c0c;
 }
 .reviews-subtext{
     font-weight: 500;
