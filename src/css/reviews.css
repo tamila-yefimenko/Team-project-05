@@ -4,7 +4,7 @@
 }
 
 .reviews-title {
-text-align: left;
+    text-align: left;
     font-weight: 600;
     font-size: 32px;
     line-height: 1;
@@ -12,82 +12,103 @@ text-align: left;
     color: #0c0c0c;
     margin-bottom: 24px;
 }
+
 .reviews-list {
-display: flex;
-    gap: 20px;
+    max-width: 100%;
 }
 
 .review-item {
     background-color: #f3f3f3;
     border-radius: 30px;
     padding: 32px 36px;
-    width: 335px;
-
-}
-    .review-figcaption{
-text-align: center;
-    }
-
-.review-img {
-    border-radius: 100%;
-    background-color: #fbfbfb;
-margin: 0 auto;
-margin-bottom: 24px;
 }
 
-.victoria{
-    display: none;
-}
-.anastasia{
-    display: none;
-}
-@media (min-width: 768px) {
-    .review-item {
-            width: 344px;
-        }
-    .reviews-title{
-        font-weight: 600;
-            font-size: 48px;
-            line-height: 92%;
-            letter-spacing: -0.02em;
-    }
-    
-        .victoria {
-            display:block;
-        }
-.reviews {
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-}
-
-@media (min-width: 1280px) {
-.review-item {
-    width: 370px;
-}
-        .anastasia {
-            display: block;
-        }
-    .reviews {
-        padding-top: 50px;
-        padding-bottom: 50px;
-        padding: 0 65px;
-        }
-}
-.reviews-subtitle{
+.reviews-subtitle {
     font-weight: 500;
     font-size: 16px;
-    line-height: 125%;
+    line-height: 1.25;
     letter-spacing: -0.02em;
     text-align: center;
     margin-bottom: 8px;
     color: #0c0c0c;
 }
-.reviews-subtext{
+
+.reviews-subtext {
     font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: rgba(12, 12, 12, 0.4);
+}
+
+.review-figcaption{
+    text-align: center;
+}
+
+.review-img {
+    border-radius: 100%;
+    background-color: #fbfbfb;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.victoria{
+    display: none;
+}
+
+.anastasia{
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .reviews-list {
+        display: flex;
+        gap: 20px;
+    }
+
+    .review-item {
+        max-width: 344px;
+    }
+
+    .reviews-title{
+        font-size: 48px;
+        line-height: 0.92;
+        margin-bottom: 40px;
+    }
+
+    .reviews-subtitle {
+        font-size: 18px;
+        line-height: 1.1;
+    }
+    
+    .reviews-subtext {
         font-size: 16px;
-        line-height: 125%;
-        letter-spacing: -0.02em;
-        text-align: center;
-        color: rgba(12, 12, 12, 0.4);
+        line-height: 1.25;
+    }
+    
+    .victoria {
+        display:block;
+    }
+
+    .reviews {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .reviews .container {
+        padding-left: 65px;
+        padding-right: 65px;
+    }
+
+    .review-item {
+        max-width: 370px;
+    }
+
+    .anastasia {
+        display: block;
+    }
 }
