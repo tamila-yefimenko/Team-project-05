@@ -166,9 +166,9 @@
         height: 36px;
     }
 
-    .low-icon {
-        width: 20px;
-        height: 20px;
+    .social-icon-svg-low {
+        width: 20px !important;
+        height: 20px !important;
     }
 
     .social-menu{
