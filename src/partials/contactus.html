@@ -1,1 +1,79 @@
-<section></section>
+<section class="container contactus">
+  <h2 class="contactus-title">Contact us</h2>
+  <div class="contactus-content">
+    <form class="contactus-form">
+      <p class="form-text">
+        Please use the form below to contact us. Enter your name, email, phone,
+        and message and we'll get back to you shortly.
+      </p>
+      <div class="input-form">
+        <input
+          class="input-form-text"
+          type="text"
+          name="user-name"
+          id="user-name"
+          placeholder="Name"
+          autofocus
+        />
+      </div>
+      <div class="input-form">
+        <input
+          class="input-form-text"
+          type="email"
+          name="user-email"
+          id="user-email"
+          placeholder="Email"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+        />
+      </div>
+      <div class="input-form">
+        <input
+          class="input-form-text"
+          type="tel"
+          name="user-tel"
+          id="user-tel"
+          placeholder="+380"
+          pattern="^+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
+        />
+      </div>
+      <div class="contactus-input-comment">
+        <textarea
+          class="text-input"
+          name="user-comment"
+          id="user-comment"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+      <button type="submit" class="contactus-button">Send</button>
+    </form>
+    <picture>
+      <source
+        srcset="
+          /images/contact-us/contact-us-desk.webp    1x,
+          /images/contact-us/contact-us-2x-desk.webp 2x
+        "
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="
+          /images/contact-us/contact-us-tab.webp    1x,
+          /images/contact-us/contact-us-2x-tab.webp 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          /images/contact-us/contact-us-mob.webp    1x,
+          /images/contact-us/contact-us-2x-mob.webp 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <img
+        class="contactus-picture"
+        src="/images/contact-us/contact-us-mob.webp"
+        alt="Contact us Clock"
+        width="335"
+      />
+    </picture>
+  </div>
+</section>
