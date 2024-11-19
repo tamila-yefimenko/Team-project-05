@@ -1,7 +1,11 @@
-.sale-section {
+/* .sale-section {
     padding-top: 30px;
     padding-bottom: 30px;
-}
+} */
+ .sale{
+    padding-top: 30px;
+    padding-bottom: 30px;
+ }
 
 .sale-container {
     display: block;
@@ -144,6 +148,11 @@
 }
 
   @media only screen and (min-width: 768px) {
+        .sale{
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
         .sale-title {
             font-size: 48px;
             line-height: 0.91667;;
@@ -214,8 +223,14 @@
   }
 
   @media only screen and (min-width: 1280px) {
-         .sale-section {
-            padding: 40px 65px;
+    
+        .sale{
+            padding-top: 50px;
+            padding-bottom: 50px;
+         }
+    
+        .sale-section {
+            padding: 0 65px;
         }
 
         .sale-wrapper {

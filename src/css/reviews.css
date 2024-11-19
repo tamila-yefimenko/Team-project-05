@@ -99,6 +99,11 @@
 
 @media (min-width: 1280px) {
 
+    .reviews {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
     .reviews .container {
         padding-left: 65px;
         padding-right: 65px;
