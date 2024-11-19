@@ -1,5 +1,6 @@
+
 .advertisement {
-    background-image: url(/images/Advertisement/advertisement-bg-mob.webp), linear-gradient(#0c0c0c, #0c0c0c);
+    background-image: url(/images/Advertisement/image-advertisement-mob.png), linear-gradient(#0c0c0c, #0c0c0c);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -7,13 +8,15 @@
     box-sizing: border-box;
     display: flex;
     justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
     
     }
 @media screen and (min-resolution: 2dppx),
 (min-resolution: 192dpi),
 (-webkit-min-device-pixel-ratio: 2) {
-    .advertisement {
-        background-image: url(/images/Advertisement/advertisement-bg-2x-mob.webp), linear-gradient(#0c0c0c, #0c0c0c);
+.advertisement {
+    background-image: url(/images/Advertisement/image-advertisement-mob-2x.png), linear-gradient(#0c0c0c, #0c0c0c);
     }
 }
 
@@ -74,13 +77,15 @@ text-align: left;
     border: 0;
 }
 
-/* Tablet (768px+) */
+
 @media (min-width: 768px) {
     .advertisement {
         max-width: 768px;
         max-height: 425px;
-        background-image: url(/images/Advertisement/advertisement-bg-2x-desc.webp),
+        background-image: url(/images/Advertisement/image-advertisement-tab.png),
         linear-gradient(#0c0c0c, #0c0c0c);
+        margin-top: 40px;
+        margin-bottom: 40px;
         }
     .content {
         padding-top: 80px;
@@ -98,7 +103,7 @@ text-align: left;
         (min-resolution: 192dpi),
         (-webkit-min-device-pixel-ratio: 2) {
         .advertisement {
-                background-image: url(/images/Advertisement/advertisement-bg-2x-tab.webp), linear-gradient(#0c0c0c, #0c0c0c);
+                background-image: url(/images/Advertisement/image-advertisement-tab-2x.png), linear-gradient(#0c0c0c, #0c0c0c);
             }
         }
 }
@@ -109,8 +114,10 @@ text-align: left;
         max-height: 298px;
         width: 100%;
         margin: 0 auto;
-        background-image: url(/images/Advertisement/advertisement-bg-desk.webp),
-            linear-gradient(#0c0c0c, #0c0c0c);
+        background-image: url(/images/Advertisement/image-advertisement-desc.png),
+        linear-gradient(#0c0c0c, #0c0c0c);
+        margin-top: 50px;
+        margin-bottom: 50px;
         }
         
     
@@ -139,7 +146,7 @@ text-align: left;
     (min-resolution: 192dpi),
     (-webkit-min-device-pixel-ratio: 2) {
     .title-page {
-    background-image: url(/images/Advertisement/advertisement-bg-2x-desc.webp), linear-gradient(#0c0c0c, #0c0c0c);
+    background-image: url(/images/Advertisement/image-advertisement-desc-2x.png), linear-gradient(#0c0c0c, #0c0c0c);
      }
     }
 }
