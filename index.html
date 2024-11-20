@@ -10,7 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
     <script type="module" crossorigin src="/team-project-05/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/team-project-05/assets/index-BVgcwUZo.css">
+    <link rel="stylesheet" crossorigin href="/team-project-05/assets/index-Nx9lHPxQ.css">
   </head>
   <body>
     <header class="page-header">
@@ -546,7 +546,75 @@
   </div>
 </section>
 
-      <section></section>
+      <section class="contactus container" id="contacts">
+  <h2 class="contactus-title">Contact us</h2>
+  <div class="contactus-content">
+    <form class="contactus-form">
+      <p class="form-text">
+        Please use the form below to contact us. Enter your name, email, phone,
+        and message and we'll get back to you shortly.
+      </p>
+      <div class="input-form">
+        <input
+          class="input-form-text"
+          type="text"
+          name="user-name"
+          id="user-name"
+          placeholder="Name"
+          autofocus
+        />
+      </div>
+      <div class="input-form">
+        <input
+          class="input-form-text"
+          type="email"
+          name="user-email"
+          id="user-email"
+          placeholder="Email"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+        />
+      </div>
+      <div class="input-form">
+        <input
+          class="input-form-text"
+          type="tel"
+          name="user-tel"
+          id="user-tel"
+          placeholder="+380"
+          pattern="^+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
+        />
+      </div>
+      <div class="contactus-input-comment">
+        <textarea
+          class="text-input"
+          name="user-comment"
+          id="user-comment"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+      <button type="submit" class="contactus-button">Send</button>
+    </form>
+    <picture>
+      <source
+        srcset="/team-project-05/assets/contact-us-desk-gW1WB_HP.webp 1x, /team-project-05/assets/contact-us-2x-desk-DkqGx3Fx.webp 2x"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="/team-project-05/assets/contact-us-tab-CWn_g0vQ.webp 1x, /team-project-05/assets/contact-us-2x-tab-B04-ht_6.webp 2x"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="/team-project-05/assets/contact-us-mob-DjY5yv-2.webp 1x, /team-project-05/assets/contact-us-2x-mob-6079Mrf6.webp 2x"
+        media="(max-width: 767px)"
+      />
+      <img
+        class="contactus-picture"
+        src="/team-project-05/assets/contact-us-mob-DjY5yv-2.webp"
+        alt="Contact us Clock"
+      />
+    </picture>
+  </div>
+</section>
 
     </main>
 
