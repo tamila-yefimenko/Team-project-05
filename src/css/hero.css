@@ -3,10 +3,6 @@
     padding-bottom: 30px;
 }
 
-.hero-container {
-    min-width: 335px;
-}
-
 .hero-text {
     display: flex;
     flex-direction: column;
