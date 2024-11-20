@@ -143,14 +143,9 @@
     }
 }
 
-
 @media only screen and (min-width: 1280px) {
     .hero {
         padding-bottom: 50px;
-    }
-    
-    .hero-container {
-        max-width: 1214px;
     }
     
     .hero-text {
@@ -178,7 +173,7 @@
         transform: translate(44px, 0);
     }
     
-        .hero-item:nth-child(3) {
+    .hero-item:nth-child(3) {
         transform: translate(86px, 0);
     }
 }
