@@ -110,9 +110,9 @@
         padding-bottom: 0;
     }
     
-    .adv-button:hover,
-    .adv-button:active,
-    .adv-button:focus {
+    .adv-link:hover,
+    .adv-link:active,
+    .adv-link:focus {
         background-color: #fbfbfb;
         color: #0c0c0c;
     }
