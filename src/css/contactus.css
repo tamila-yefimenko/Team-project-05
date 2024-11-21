@@ -1,6 +1,6 @@
 .contactus{
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
 }
 .contactus-title{
     text-align: left;
@@ -139,7 +139,7 @@
 @media screen and (min-width: 768px) {
 .contactus {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
     }
 .contactus-title {
     font-size: 48px;
@@ -186,7 +186,7 @@
 }
 .contactus {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     }
 .contactus-title {
     font-size: 48px;
