@@ -8,7 +8,8 @@
     align-items: center;
 }
 
-.navigations, .social-container {
+.navigations,
+.social-container {
     display: none;
     visibility: hidden;
     opacity: 0;
@@ -19,7 +20,7 @@
     align-items: center;
 }
 
-.logo{
+.logo {
     font-family: "Gilroy", sans-serif;
     font-weight: 500;
     font-size: 20px;
@@ -34,10 +35,10 @@
     }
 }
 
-@media screen and (min-width: 1280px){
-.headache {
-    padding: 0 65px;
-}
+@media screen and (min-width: 1280px) {
+    .headache {
+        padding: 0 65px;
+    }
 
     .logo {
         padding: 32px 0;
@@ -51,9 +52,9 @@
         gap: 40px;
         padding-top: 30px;
         padding-bottom: 40px;
-    } 
+    }
 
-    .point{
+    .point {
         font-family: "Gilroy", sans-serif;
         font-weight: 500;
         font-size: 14px;
@@ -61,29 +62,62 @@
         text-align: center;
         color: #0c0c0c;
         position: relative;
+        transition: color 0.3s ease, transform 0.3s ease-out;
     }
-    
+
+    .non-strip::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #3350e9;
+        transition: width 0.3s ease;
+    }
+
+    .non-strip:hover::after,
+    .non-strip:focus::after {
+        width: 100%;
+    }
+
     .strip::after {
         content: '';
         display: block;
         position: absolute;
-        width: 9px;
+        width: 8px;
         height: 8px;
         background-color: #3350e9;
         border-radius: 100%;
         left: 15px;
-    } 
+    }
 
-    .social-container{
+    .strip:hover::after,
+    .strip:focus::after {
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #3350e9;
+        transition: width 0.3s ease;
+    }
+
+    .strip:hover::after,
+    .strip:focus::after {
+        height: 2px;
+        width: 100%;
+    }
+
+    .social-container {
         display: flex;
         gap: 10px;
         padding: 25px 0;
         justify-content: center;
         visibility: visible;
         opacity: 1;
-    } 
+    }
 
-    .social-icon{
+    .social-icon {
         border: 1px solid rgba(12, 12, 12, 0.1);
         border-radius: 10px;
         padding: 8px;
@@ -96,11 +130,11 @@
         cursor: pointer;
     }
 
-    .social-icon-link{
+    .social-icon-link {
         opacity: 0.8;
     }
 
-    .social-icon-svg{
+    .social-icon-svg {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -108,7 +142,7 @@
     }
 
     .social-icon:hover .social-icon-svg,
-    .social-icon:focus .social-icon-svg{
+    .social-icon:focus .social-icon-svg {
         fill: #3350e9;
     }
 }
