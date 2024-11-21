@@ -25,14 +25,12 @@
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-
     border-radius: 30px;
     padding: 48px 28px;
-
     background: #f3f3f3;
 }
 .form-text{
-    padding-bottom: 28px;
+    margin-bottom: 28px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.29;
@@ -42,7 +40,7 @@
 
 .input-form{
     width: 100%;
-    padding-bottom: 18px;
+    margin-bottom: 18px;
 }
 .input-form-text{
     border: 1px solid rgba(12, 12, 12, 0.15);
@@ -66,7 +64,7 @@
 }
 .contactus-input-comment{
     width: 100%;
-    padding-bottom: 28px;
+    margin-bottom: 28px;
 }
 .contactus-input-comment::placeholder {
     font-family: "Gilroy", sans-serif;
@@ -116,7 +114,6 @@
     text-align: center;
     color: #fbfbfb;
     background-color: #3350e9;
-
     display: block;
     cursor: pointer;
     border: none;
@@ -140,69 +137,78 @@
 .contactus {
     padding-top: 40px;
     padding-bottom: 80px;
-    }
+}
+
 .contactus-title {
     font-size: 48px;
+    margin-bottom: 40px;
 }
+
 .contactus-content {
     gap: 40px;
 }
+
 .contactus-form {
     border-radius: 50px;
     padding: 50px 122px;
 }
+
 .form-text {
     font-size: 16px;
     line-height: 1.25;
-    padding-bottom: 32px;
+    margin-bottom: 32px;
 }
+
 .input-form-text {
     font-size: 16px;
     height: 52px;
 }
+
 .contactus-input-comment {
-    padding-bottom: 32px;
+    margin-bottom: 32px;
 }
+
 .contactus-input-comment::placeholder {
     font-size: 16px;
     line-height: 1.25;
 }
-.text-input::placeholder{
+
+.text-input::placeholder {
     font-size: 16px;
     line-height: 1.25;
 }
-.contactus-button{
-   padding: 17px 63px;
-   width: 160px; 
-   height: 52px;
+.contactus-button {
+    padding: 17px 63px;
+    width: 160px; 
+    height: 52px;
 }
 }
-
 
 @media screen and (min-width: 1280px){
-.container{
+.container {
     padding-left: 65px;
     padding-right: 65px;
 }
+
 .contactus {
     padding-top: 50px;
     padding-bottom: 100px;
-    }
+}
+
 .contactus-title {
     font-size: 48px;
 }
+
 .contactus-content {
     flex-direction: row;
     gap: 40px;
 }
+
 .contactus-form{
     border-radius: 50px;
     padding: 50px 60px;
-
     flex: 1 1 50%;
     max-width: 580px;
 }
-.input-form{
-    padding-bottom: 18px;
-}
+
 }
