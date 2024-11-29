@@ -29,6 +29,11 @@
 .about-text-first{
     margin-bottom: 20px;
 }
+
+.about-text-second {
+    margin-bottom: 40px;
+}
+
 .about-btn{
     display: block;
     border-radius: 16px;
@@ -43,7 +48,6 @@
     text-align: center;
     color: #fbfbfb;
     border: 0;
-    margin-top: 40px;
 }
 
 .about-img {
@@ -75,8 +79,8 @@
         line-height: 1.25;
     }
 
-    .about-btn{
-        margin-top: 60px;
+    .about-text-second{
+        margin-bottom: 60px;
     }
 
     .about-img{
@@ -101,8 +105,11 @@
         padding: 0 65px;
     }
 
+    .about-text-second {
+        margin-bottom: 40px;
+    }
+
     .about-btn{
-        margin-top: 40px;
         transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 

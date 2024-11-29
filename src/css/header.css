@@ -102,12 +102,6 @@
         transition: width 0.3s ease;
     }
 
-    .strip:hover::after,
-    .strip:focus::after {
-        height: 2px;
-        width: 100%;
-    }
-
     .social-container {
         display: flex;
         gap: 10px;

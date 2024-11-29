@@ -28,9 +28,8 @@
         line-height: 1;
         letter-spacing: -0.02em;
         color: #fbfbfb;
-        margin-bottom: 28px;
+        margin-bottom: 35px;
         text-align: left;
-        padding-bottom: 7px;
     }
 
     .advertisement .content .story {
@@ -72,7 +71,7 @@
     .text-advertisement {
         font-size: 48px;
         line-height: 0.92;
-        margin-bottom: 32px;
+        margin-bottom: 39px;
     }
 
         @media screen and (min-resolution: 2dppx),
