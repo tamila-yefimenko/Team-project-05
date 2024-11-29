@@ -7,11 +7,17 @@ footer {
 
 .footer-container {
   min-height: 513px;
-}
-.container-footer {
   padding: 40px 28px 28px;
   min-width: unset;
   max-width: 335px;
+}
+
+.footer-top-content {
+  margin-bottom: 40px;
+}
+
+.footer-section {
+  margin-bottom: 20px;
 }
 
 .footer-text {
@@ -29,7 +35,8 @@ footer {
   border-radius: 10px;
 }
 
-.footer-soc-links:hover {
+.footer-soc-links:hover,
+.footer-soc-links:focus {
   opacity: 1;
 }
 
@@ -38,7 +45,8 @@ footer {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-soc-links:hover .footer-icon {
+.footer-soc-links:hover .footer-icon,
+.footer-soc-links:focus .footer-icon {
   fill: #fbfbfb;
 }
 
@@ -58,13 +66,11 @@ footer {
 .social-links {
   display: flex;
   gap: 10px;
-  margin-bottom: 20px;
 }
 
 .footer-phone {
   width: 153px;
   height: 44px;
-  margin-bottom: 40px;
 }
 
 .footer-link-phone {
@@ -170,31 +176,39 @@ footer {
 @media only screen and (min-width: 768px) {
   .footer-container {
     min-height: 472px;
-  }
-  .container-footer {
     padding: 40px 40px 28px;
     max-width: 728px;
   }
+  
   .footer-top-content {
     display: flex;
     justify-content: space-between;
     margin-bottom: 86px;
   }
+
+  .footer-section {
+    margin-bottom: 0;
+  }
+
   .footer-text {
     font-size: 20px;
   }
+
   .footer-phone {
     width: 172px;
     height: 48px;
   }
+
   .footer-link-phone {
     font-size: 14px;
     line-height: 1.28;
   }
+
   .footer-soc {
     width: 36px;
     height: 36px;
   }
+
   .footer-logo {
     font-size: 28px;
     line-height: 1.14;
@@ -202,11 +216,13 @@ footer {
     max-width: 524px;
     margin: 0 auto 100px;
   }
+
   .footer-bottom {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
   }
+
   .item-address {
     font-size: 14px;
     line-height: 1.28;
@@ -236,6 +252,7 @@ footer {
     line-height: 1.28;
     max-width: 162px;
   }
+
   .list-address {
     display: flex;
     gap: 40px;
@@ -243,14 +260,18 @@ footer {
     flex-wrap: wrap;
     gap: 8px 16px;
   }
+
   .footer-info {
     padding-bottom: 28px;
     margin-bottom: 28px;
   }
+
   .rights {
     font-size: 14px;
     line-height: 1.28;
+    margin-bottom: 0;
   }
+
   .privacy-footer {
     font-size: 14px;
     line-height: 1.28;
@@ -260,24 +281,22 @@ footer {
 @media only screen and (min-width: 1280px) {
   .footer-container {
     min-height: 332px;
+    max-width: 1280px;
   }
+
   .footer-logo {
-    margin: 0 auto 126px;
+    margin: 0 auto;
     position: absolute;
     top: 21%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
   .footer-top-content {
-    margin-bottom: 0px;
-  }
-  .footer {
-    position: relative;
-  }
-  .social-links {
     margin-bottom: 142px;
   }
-  .container-footer {
-    max-width: 1280px;
+
+  .footer {
+    position: relative;
   }
 }
